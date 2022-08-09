@@ -7,14 +7,14 @@ namespace Held_og_lotto
     {
         static void Main(string[] args)
         {
-            //
+            //Generator of random numbers
             Random rng = new Random();
 
 
-            //
+            //A string to store the text later on
             string text = "";
-
-            //
+            
+            //a for loop that runs 7 times, with the last number being red.
             for (int i = 0; i < 7; i++)
             {
                 wait(2);
@@ -30,6 +30,7 @@ namespace Held_og_lotto
                 }
             }
 
+            //makeshift timer
             void wait(double x)
             {
                 DateTime t = DateTime.Now;
@@ -42,7 +43,7 @@ namespace Held_og_lotto
             }
 
 
-
+            //TO NOT close console yet
             Console.Read();
         }
     }
